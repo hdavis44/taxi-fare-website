@@ -45,5 +45,5 @@ params = {
 
 if st.button('predict'):
     response = requests.get(url, params=params)
-    prediction = response.json().get("prediction", "no prediction")
+    prediction = response.json().get(float("prediction"), "no prediction")
     st.write("$", round(prediction,2))
