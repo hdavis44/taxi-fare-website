@@ -1,4 +1,3 @@
-from requests.models import Response
 import streamlit as st
 from datetime import datetime
 import requests
